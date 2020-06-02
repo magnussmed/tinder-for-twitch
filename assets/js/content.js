@@ -78,6 +78,10 @@ $( document ).ready(function() {
 			}
 		});
 
+		$( 'body .itsAMatch Pos(r)' ).each(function(e) {
+			$( this ).remove();
+		});
+
 		$( 'body .chatNavBar__connectionInfo' ).each(function(e) {
 			$( this ).remove();
 		});
