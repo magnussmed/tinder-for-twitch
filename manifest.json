@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Tinder for Twitch",
+	"description": "Hides everything u need to hide.",
+	"version": "0.1",
+	"background": {
+		"scripts": ["assets/dist/js/background.min.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://tinder.com/*"],
+			"js": ["assets/js/lib/jquery.min.js", "assets/dist/js/content.min.js"]
+		}
+	],
+	"permissions" : [
+		"http://*/",
+		"activeTab"
+	],
+	"browser_action": {
+		"default_icon": "icon.png"
+	}
+}
