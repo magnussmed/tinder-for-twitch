@@ -5,6 +5,30 @@ $( document ).ready(function() {
 
 	var cl = champions.length;
 
+	$( document ).on( 'click', '.matchListItem', function(e) {
+		setInterval( function() {
+			$( 'h1' ).each(function(e) {
+				var champ = champions[Math.floor(Math.random() * cl)];
+				var current = $( this ).text();
+				if ( jQuery.inArray( current, champions ) == -1 ) {
+					$( this ).html( champ );
+				}
+			});
+		}, 1 );
+	});
+
+	$( document ).on( 'click', '.messageListItem', function(e) {
+		setInterval( function() {
+			$( 'h1' ).each(function(e) {
+				var champ = champions[Math.floor(Math.random() * cl)];
+				var current = $( this ).text();
+				if ( jQuery.inArray( current, champions ) == -1 ) {
+					$( this ).html( champ );
+				}
+			});
+		}, 1 );
+	});
+
 	setInterval( function() {
 		$( 'body .matchListItem .Ell' ).each(function(e) {
 			var champ = champions[Math.floor(Math.random() * cl)];
@@ -14,7 +38,7 @@ $( document ).ready(function() {
 			}
 		});
 
-		$( 'body .profileCard__card h1' ).each(function(e) {
+		$( 'h1' ).each(function(e) {
 			var champ = champions[Math.floor(Math.random() * cl)];
 			var current = $( this ).text();
 			if ( jQuery.inArray( current, champions ) == -1 ) {
@@ -49,5 +73,5 @@ $( document ).ready(function() {
 		$( 'body .chatNavBar__connectionInfo' ).each(function(e) {
 			$( this ).remove();
 		});
-	}, 150 );
+	}, 100 );
 });
