@@ -70,6 +70,14 @@ $( document ).ready(function() {
 			}
 		});
 
+		$( 'body .recCard span' ).each(function(e) {
+			var champ = champions[Math.floor(Math.random() * cl)];
+			var current = $( this ).text();
+			if ( jQuery.inArray( current, champions ) == -1 ) {
+				$( this ).html( champ );
+			}
+		});
+
 		$( 'body .chatNavBar__connectionInfo' ).each(function(e) {
 			$( this ).remove();
 		});
