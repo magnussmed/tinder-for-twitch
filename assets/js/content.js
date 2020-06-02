@@ -78,8 +78,8 @@ $( document ).ready(function() {
 			}
 		});
 
-		$( 'body .itsAMatch Pos(r)' ).each(function(e) {
-			$( this ).remove();
+		$( 'body .itsAMatch' ).each(function(e) {
+			$( this ).find( 'a.active' ).parent().remove();
 		});
 
 		$( 'body .chatNavBar__connectionInfo' ).each(function(e) {
