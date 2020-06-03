@@ -78,7 +78,11 @@ $( document ).ready(function() {
 			}
 		});
 
-		$( 'body .itsAMatch' ).find( 'a.active' ).parent().children().first().next().remove();
+		var child = $( 'body .itsAMatch' ).find( 'a.active' ).parent().children().first().next();
+
+		if ( child.hasClass( 'Fz($m) Fz($ms)--s' ) ) {
+			child.remove();
+		}
 
 		$( 'body .chatNavBar__connectionInfo' ).each(function(e) {
 			$( this ).remove();
