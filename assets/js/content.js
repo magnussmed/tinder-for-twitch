@@ -78,9 +78,7 @@ $( document ).ready(function() {
 			}
 		});
 
-		$( 'body .itsAMatch' ).each(function(e) {
-			$( this ).find( 'a.active' ).parent().remove();
-		});
+		$( 'body .itsAMatch' ).find( 'a.active' ).parent().children().first().next().remove();
 
 		$( 'body .chatNavBar__connectionInfo' ).each(function(e) {
 			$( this ).remove();
