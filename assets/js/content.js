@@ -70,6 +70,14 @@ $( document ).ready(function() {
 			}
 		});
 
+		$( 'body .profileCard__card' ).each(function(e) {
+			$( this ).children().find( '.Row' ).remove();
+		});
+
+		$( 'body .recCard' ).each(function(e) {
+			$( this ).find( '.Row' ).remove();
+		});
+
 		$( 'body .recCard span' ).each(function(e) {
 			var champ = champions[Math.floor(Math.random() * cl)];
 			var current = $( this ).text();
