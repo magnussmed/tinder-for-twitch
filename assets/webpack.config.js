@@ -83,7 +83,7 @@ module.exports = {
 					warnings: false,
 					parse: {},
 					compress: {
-						drop_console: true // strips out console.log declarations.
+						drop_console: false
 					},
 					mangle: {},
 					module: false,

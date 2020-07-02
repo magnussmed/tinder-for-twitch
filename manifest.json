@@ -8,11 +8,12 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://tinder.com/*"],
+			"matches": ["https://tinder.com/*", "https://www.twitch.tv/sondergaardlol"],
 			"js": ["assets/js/lib/jquery.min.js", "assets/dist/js/content.min.js"]
 		}
 	],
 	"permissions" : [
+		"storage"
 	],
 	"browser_action": {
 		"default_icon": "icon.png"
