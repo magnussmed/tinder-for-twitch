@@ -83,6 +83,14 @@ $( document ).ready(function() {
 			}
 		});
 
+		$( 'body .chat h4 span' ).each(function(e) {
+			var champ = champions[Math.floor(Math.random() * cl)];
+			var current = $( this ).text();
+			if ( jQuery.inArray( current, champions ) == -1 ) {
+				$( this ).html( champ );
+			}
+		});
+
 		$( 'body .messageListItem .messageListItem__name' ).each(function(e) {
 			var champ = champions[Math.floor(Math.random() * cl)];
 			var current = $( this ).text();
