@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Tinder for Twitch",
 	"description": "Hides everything u need to hide.",
-	"version": "0.2",
+	"version": "0.3",
 	"background": {
 		"scripts": ["assets/dist/js/background.min.js"]
 	},

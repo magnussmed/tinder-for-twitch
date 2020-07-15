@@ -31,7 +31,8 @@ $( document ).ready(function() {
 			champions = lads;
 			cl = lads.length;
 		});
-	}, 10000 );
+
+	}, 5000 );
 	// TWTICH USERNAMES END
 
 	$( document ).on( 'click', '.matchListItem', function(e) {
