@@ -1,0 +1,4 @@
+/*
+ * js
+ */
+require('../../js/content');
