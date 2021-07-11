@@ -3,7 +3,7 @@
 	"name": "Tinder for Twitch",
 	"description": "Hides everything u need to hide.",
 	"author": "Magnus Smed",
-	"version": "1.0.5",
+	"version": "1.0.4",
 	"background": {
 		"scripts": [
 			"js/background.min.js"
